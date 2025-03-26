@@ -8,31 +8,44 @@
     <title>Registration Form</title>
 </head>
 <body>
-    <form>
+    <form id="myForm">
         <label>
             Enter the banner message:
-            <input type="text" id="message" name="message" value="" onfocus="showIt(this.form)"/>
-        </label>
+            <input type="text" id="message" name="Message"/>
+            <span class="error" id="messageError"></span>
+        </label><br/>
+    
         <label>
             Enter ZIP code of the location:
-            <input type="text" id="zip" name="zip" value="xxxxx" />
-        </label>
+            <input type="text" id="zip" name="ZIP Code"/>
+            <span class="error" id="zipError"></span>
+        </label><br/>
+    
         <label>
             Enter the date for the message to be shown:
-            <input type="text" id="message" name="message" value="" />
-        </label>
+            <input type="text" id="date" name="Date"/>
+            <span class="error" id="dateError"></span>
+        </label><br/>
+    
         <label>
             Enter your name:
-            <input type="text" id="name" name="name" value="" />
-        </label>
+            <input type="text" id="name" name="Name"/>
+            <span class="error" id="nameError"></span>
+        </label><br/>
+    
         <label>
             Enter your phone number:
-            <input type="text" id="phone" name="phone" value="" />
-        </label>
+            <input type="text" id="phone" name="Phone Number"/>
+            <span class="error" id="phoneError"></span>
+        </label><br/>
+    
         <label>
             Enter your email address:
-            <input type="email" id="email" name="email" value="" />
-        </label>
-    </form>
+            <input type="email" id="email" name="Email"/>
+            <span class="error" id="emailError"></span>
+        </label><br/>
+    
+        <button type="submit">Submit</button>
+    </form>    
 </body>
 </html>

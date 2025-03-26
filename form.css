@@ -1,0 +1,10 @@
+.error {
+    color: red;
+    font-size: 14px;
+    margin-left: 10px;
+    display: none; /* Hide errors initially */
+}
+
+.error-border {
+    border: 2px solid red;
+}
